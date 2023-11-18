@@ -1,0 +1,13 @@
+{% extends 'mainapplication/layout.html' %}
+
+{% block mainpagetitleblock %}
+    Welcome to PREFIXX !
+{% endblock %}
+
+{% block mainpageblock %}
+    <div class="features">
+        <h1>Welcome to PREFIXX !</h1>
+        <p>This is one of the best shop / forum for programmers !</p>
+        <a href="{% url 'about'%}"><button class="btn btn-secondary">Click here to redirect about page !</button></a>
+    </div>
+{% endblock %}

@@ -1,0 +1,22 @@
+{% extends 'mainapplication/layout.html' %}
+
+{% block mainpagetitleblock %}
+    {{ article.title }}
+{% endblock %}
+
+{% block mainpageblock %}
+
+    <div class="features">
+       <h1>You can change your alert here !</h1>
+        <form method="post">
+            {% csrf_token %}
+            {{ form.title }}<br>
+            {{ form.anonse }}<br>
+            {{ form.absolute_text }}<br>
+            {{ form.date }}<br>
+            <span>{{ error }}</span>
+            <button class="btn btn-outline-success" type="submit">Sumbit changes</button>
+        </form>
+    </div>
+
+{% endblock %}

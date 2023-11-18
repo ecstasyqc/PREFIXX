@@ -1,0 +1,13 @@
+{% extends 'mainapplication/layout.html' %}
+
+{% block mainpagetitleblock %}
+    You're welcome to contacts page !
+{% endblock %}
+
+{% block mainpageblock %}
+    <div class="features">
+        <h1>This is contacts page of PREFIXX project !</h1>
+        <p>Here you can contact to PREFIXX administrators / developers</p>
+        <a href="{% url 'home'%}"><button class="btn btn-secondary">Click here to redirect to main page !</button></a>
+    </div>
+{% endblock %}

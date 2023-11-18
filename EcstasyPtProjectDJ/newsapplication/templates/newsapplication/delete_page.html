@@ -1,0 +1,18 @@
+{% extends 'mainapplication/layout.html' %}
+
+{% block mainpagetitleblock %}
+    Delete your alert here (
+{% endblock %}
+
+{% block mainpageblock %}
+
+    <div class="features">
+       <h1>Exactly delete your alert ?</h1>
+        <form method="post">
+            {% csrf_token %}
+            <button class="btn btn-outline-danger" type="submit">Delete alert !</button>
+            <a href="/news/"><button type="button" class="btn btn-outline-success">Go back ..</button></a>
+        </form>
+    </div>
+
+{% endblock %}

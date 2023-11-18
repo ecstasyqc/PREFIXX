@@ -1,0 +1,21 @@
+.news-main-styles {
+    margin-top: -170px;
+}
+
+.news-create-styles {
+    margin-top: -100px;
+}
+
+.update-text-styles {
+    position: relative;
+    top: -150px;
+}
+
+.delete-text-styles {
+    position: relative;
+    top: 60px;
+}
+
+.update-button-styles {
+    margin-left: -40px;
+}
