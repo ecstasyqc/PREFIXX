@@ -1,27 +1,32 @@
 {% extends 'mainapplication/layout.html' %}
+{% load static %}
 
 {% block mainpagetitleblock %}
     News on PREFIXX site !
+
 {% endblock %}
 
 {% block mainpageblock %}
 
+<link rel="stylesheet", href="{% static 'newsapplication/css/newsapplication_file.css' %}">
     <div class="features">
-        <h1>News on PREFIXX site :</h1>
-        {% if news %}
-            {% for elements_in_news in news %}
+        <div class="news-main-styles">
+            <h1>News on PREFIXX site :</h1>
+            {% if news %}
+                {% for elements_in_news in news %}
+                    <div class="alert alert-warning">
+                        <h3>{{ elements_in_news.title }}</h3>
+                        <h4>{{ elements_in_news.anonse }}</h4>
+                        <p>{{ elements_in_news.absolute_text }}</p>
+                        <a href="{% url 'news_detail' elements_in_news.id %}" class="btn btn-outline-secondary">Read more</a>
+                    </div>
+                {% endfor %}
+            {% else %}
                 <div class="alert alert-warning">
-                    <h3>{{ elements_in_news.title }}</h3>
-                    <h4>{{ elements_in_news.anonse }}</h4>
-                    <p>{{ elements_in_news.absolute_text }}</p>
-                    <a href="{% url 'news_detail' elements_in_news.id %}" class="btn btn-outline-secondary">Read more</a>
+                    <h4>You not have any alerts !</h4>
                 </div>
-            {% endfor %}
-        {% else %}
-            <div class="alert alert-warning">
-                <h4>You not have any alerts !</h4>
-            </div>
-        {% endif %}
+            {% endif %}
+        </div>
     </div>
 
 {% endblock %}

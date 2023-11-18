@@ -1,9 +1,9 @@
 .news-main-styles {
-    margin-top: -170px;
+    margin-top: -160px;
 }
 
 .news-create-styles {
-    margin-top: -100px;
+    margin-top: -140px;
 }
 
 .update-text-styles {
@@ -11,11 +11,11 @@
     top: -150px;
 }
 
-.delete-text-styles {
-    position: relative;
-    top: 60px;
-}
-
 .update-button-styles {
     margin-left: -40px;
+}
+
+.news-details-view {
+    margin-top: -50px;
+    margin-left: 50px;
 }

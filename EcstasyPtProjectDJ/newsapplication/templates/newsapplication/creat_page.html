@@ -1,22 +1,25 @@
 {% extends 'mainapplication/layout.html' %}
+{% load static %}
 
 {% block mainpagetitleblock %}
     Create your alert here !
 {% endblock %}
 
 {% block mainpageblock %}
-
+<link rel="stylesheet", href="{% static 'newsapplication/css/newsapplication_file.css' %}">
     <div class="features">
-       <h1>Create your alert !</h1>
-        <form method="post">
-            {% csrf_token %}
-            {{ form.title }}<br>
-            {{ form.anonse }}<br>
-            {{ form.absolute_text }}<br>
-            {{ form.date }}<br>
-            <span>{{ error }}</span>
-            <button class="btn btn-outline-success" type="submit">Add alert !</button>
-        </form>
+        <div class="news-create-styles">
+           <h1>Create your alert !</h1>
+            <form method="post">
+                {% csrf_token %}
+                {{ form.title }}<br>
+                {{ form.anonse }}<br>
+                {{ form.absolute_text }}<br>
+                {{ form.date }}<br>
+                <span>{{ error }}</span>
+                <button class="btn btn-outline-success" type="submit">Add alert !</button>
+            </form>
+        </div>
     </div>
 
 {% endblock %}

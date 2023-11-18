@@ -1,17 +1,20 @@
 {% extends 'mainapplication/layout.html' %}
+{% load static %}
+<link rel="stylesheet", href="{% static 'newsapplication/css/newsapplication_file.css' %}">
 
 {% block mainpagetitleblock %}
     {{ article.title }}
 {% endblock %}
 
 {% block mainpageblock %}
-
+<link rel="stylesheet", href="{% static 'newsapplication/css/newsapplication_file.css' %}">
     <div class="features">
+        <div class="news-details-view">
         <h1>{{ article.title }}</h1>
         <p>{{ article.date }}</p>
         <p>{{ article.absolute_text }}</p>
         <a href="{% url 'news_delete' article.id %}" class="btn btn-outline-danger">Delete this alert !</a>
         <a href="{% url 'news_update' article.id %}" class="btn btn-outline-warning">Change your alert !</a>
     </div>
-
+        </div>
 {% endblock %}

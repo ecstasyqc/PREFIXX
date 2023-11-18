@@ -1,12 +1,14 @@
 {% extends 'mainapplication/layout.html' %}
+{% load static %}
 
 {% block mainpagetitleblock %}
     {{ article.title }}
 {% endblock %}
 
 {% block mainpageblock %}
-
+<link rel="stylesheet", href="{% static 'newsapplication/css/newsapplication_file.css' %}">
     <div class="features">
+        <div class="update-text-styles">
        <h1>You can change your alert here !</h1>
         <form method="post">
             {% csrf_token %}
@@ -15,8 +17,9 @@
             {{ form.absolute_text }}<br>
             {{ form.date }}<br>
             <span>{{ error }}</span>
-            <button class="btn btn-outline-success" type="submit">Sumbit changes</button>
+            <button class="btn btn-outline-success" type="submit">Submit changes</button>
         </form>
+        </div>
     </div>
 
 {% endblock %}
