@@ -16,6 +16,8 @@ aside img {
     width: 280px;
     position: relative;
     top: -60px;
+    max-width: 100%;
+    height: auto;
 }
 
 aside h3 {
@@ -23,6 +25,7 @@ aside h3 {
     position: relative;
     top: -60px;
     font-weight: bold;
+    font-size: 1.8vw;
 }
 
 aside ul {list-style: none}
@@ -35,6 +38,9 @@ aside ul li {
     margin-left: 45px;
     font-size: 23px;
     transition: transform .6s ease;
+    max-width:100%;
+    height:auto;
+    font-size: 1.3vw;
 }
 
 a.noline {
@@ -55,7 +61,7 @@ main .features {
     text-align: center;
     width: 75%;
     position: relative;
-    top: -68px;
+    top: -85px;
 }
 
 
@@ -78,4 +84,8 @@ form {
     width: 180px;
     height: 100px;
     color: #e5d9c4;
+    font-size: 1vw;
+    max-width:1000%;
+    height:auto;
 }
+
