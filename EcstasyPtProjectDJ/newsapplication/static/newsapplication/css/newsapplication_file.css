@@ -19,3 +19,23 @@
     margin-top: -50px;
     margin-left: 50px;
 }
+
+.delete-form-styles {
+    margin-top: 50px;
+}
+
+.btn-outline-secondary {
+    font-weight: bold;
+}
+
+.btn-outline-danger {
+    font-weight: bold;
+}
+
+.btn-outline-warning {
+    font-weight: bold;
+}
+
+.btn-outline-success {
+    font-weight: bold;
+}

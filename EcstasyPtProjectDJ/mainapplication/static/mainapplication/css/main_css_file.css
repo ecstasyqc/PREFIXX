@@ -25,7 +25,7 @@ aside h3 {
     position: relative;
     top: -60px;
     font-weight: bold;
-    font-size: 1.8vw;
+    font-size: 1.7vw;
 }
 
 aside ul {list-style: none}
@@ -35,8 +35,9 @@ aside ul li {
     position: relative;
     top: -40px;
     margin-top: 25px;
-    margin-left: 45px;
+    margin-left: 35px;
     font-size: 23px;
+    font-weight: bold;
     transition: transform .6s ease;
     max-width:100%;
     height:auto;
@@ -62,6 +63,7 @@ main .features {
     width: 75%;
     position: relative;
     top: -85px;
+    font-weight: bold;
 }
 
 
@@ -80,12 +82,17 @@ form {
 }
 
 .btn-secondary {
-    margin-left: -25px;
+    margin-left: -18px;
     width: 180px;
     height: 100px;
     color: #e5d9c4;
     font-size: 1vw;
+    font-weight: bold;
     max-width:1000%;
     height:auto;
+}
+
+main h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
 }
 

@@ -18,7 +18,7 @@
                         <h3>{{ elements_in_news.title }}</h3>
                         <h4>{{ elements_in_news.anonse }}</h4>
                         <p>{{ elements_in_news.absolute_text }}</p>
-                        <a href="{% url 'news_detail' elements_in_news.id %}" class="btn btn-outline-secondary">Read more</a>
+                        <h2><a href="{% url 'news_detail' elements_in_news.id %}" class="btn btn-outline-secondary">Read more</a></h2>
                     </div>
                 {% endfor %}
             {% else %}
