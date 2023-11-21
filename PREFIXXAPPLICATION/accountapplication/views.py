@@ -16,7 +16,6 @@ def dashboard(request):
            {'section': 'dashboard'})
 
 # create main function user_login :
-
 def user_login(request):
     if request.method == 'POST':
         form = LoginForm(request.POST)
