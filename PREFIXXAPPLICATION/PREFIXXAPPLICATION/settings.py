@@ -73,7 +73,7 @@ TEMPLATES = [
 WSGI_APPLICATION = 'PREFIXXAPPLICATION.wsgi.application'
 
 
-# Database
+# DATABASE :
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
 DATABASES = {
@@ -84,7 +84,7 @@ DATABASES = {
 }
 
 
-# Password validation
+# PASSWORD VALIDATION :
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
 
 AUTH_PASSWORD_VALIDATORS = [
@@ -118,7 +118,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
-# IMPORTANT IMPORTANT IMPORTANT
+# IMPORTANT ! IMPORTANT ! IMPORTANT !
     # <^-^> =>
         # HERE WE ARE IMPORTING STATIC FILES IN PROJECT :
 
@@ -134,7 +134,7 @@ STATICFILES_DIRS = [
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
-# IMPORTANT IMPORTANT IMPORTANT
+# IMPORTANT ! IMPORTANT ! IMPORTANT !
     # <^-^> =>
         # WE NEED TO PATH THIS SETTINGS TO DEFAULT URLS :
 
@@ -142,7 +142,8 @@ LOGIN_REDIRECT_URL = 'dashboard'
 LOGIN_URL = 'login'
 LOGOUT_URL = 'logout'
 
-# IMPORTANT IMPORTANT IMPORTANT
+# IMPORTANT ! IMPORTANT ! IMPORTANT !
     # <^-^> =>
         # HERE WE IMPORT MODULE TO CAN SEND MAILS TO EMALIS :
 
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
