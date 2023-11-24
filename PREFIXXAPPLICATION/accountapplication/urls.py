@@ -11,5 +11,10 @@ urlpatterns = [
     path('', include('django.contrib.auth.urls')),
 
     # PATHES TO REGISTRATION :
-    path('registration/', views.register, name='registration')
+    path('registration/', views.RegistrationFunc, name='registration'),
+
+    # PATH TO DELETE ACCOUNT :
+    path('account_delete/<int:user_id>/', views.AccountDelete, name='account_delete'),
+    path('account_delete_done/', views.AccountDeleteDone, name='account_delete_done'),
+
 ]

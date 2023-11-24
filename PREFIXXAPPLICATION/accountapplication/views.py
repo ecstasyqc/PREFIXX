@@ -1,7 +1,7 @@
 # import all need modules for views.py :
 
 from django.shortcuts import render
-from django.http import HttpResponse
+from django.http import HttpResponse, HttpResponseRedirect
 from django.contrib.auth import authenticate, login
 from .forms import LoginForm, UserRegistrationForm
 from django.contrib.auth.decorators import login_required
@@ -60,4 +60,15 @@ def RegistrationFunc(request):
         return render(request, 'user_registration/registration.html',
                                      {'user_form': user_form})
 
+# CREATING DELETE ACCOUNT FORM
 
+def AccountDelete(request, user_id):
+    # delete the user from the database :
+    user_delete = user.objects.get(id=user_id)
+    user_delete.delete()
+
+    # return a response to the user :
+    return render(request, 'delete_account/delete_account.html')
+
+def AccountDeleteDone(request):
+    return render(request, 'delete_account/delete_account_done.html')
