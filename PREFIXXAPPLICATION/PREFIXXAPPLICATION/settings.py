@@ -147,3 +147,11 @@ LOGOUT_URL = 'logout'
         # HERE WE IMPORT MODULE TO CAN SEND MAILS TO EMALIS :
 
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
+# IMPORTANT ! IMPORTANT ! IMPORTANT !
+    # <^-^> =>
+        # HERE WE IMPORT MODULES TO CAN DOWNLOAD AND SHARE MEDIA FILES :
+
+MEDIA_URL = 'media/'
+
+MEDIA_ROOT = BASE_DIR / 'media'
