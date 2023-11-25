@@ -35,7 +35,7 @@ aside ul li {
     position: relative;
     top: -40px;
     margin-top: 25px;
-    margin-left: 35px;
+    margin-left: 40px;
     font-size: 23px;
     font-weight: bold;
     transition: transform .6s ease;
@@ -82,7 +82,7 @@ form {
 }
 
 .btn-secondary {
-    margin-left: -18px;
+    margin-left: -25px;
     width: 180px;
     height: 100px;
     color: #e5d9c4;
@@ -93,6 +93,31 @@ form {
 }
 
 main h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+}
+
+.fa-home {
+    margin-left: 0px;
+}
+
+.fa-users{
+    margin-left: -15px;
+}
+
+.fa-phone-square {
+    margin-left: -13px;
+}
+
+.fa-user-circle {
+    margin-left: -30px;
+}
+
+
+.btn-outline-warning {
+    font-weight: bold;
+}
+
+.btn-outline-success {
     font-weight: bold;
 }
 

@@ -18,4 +18,5 @@ urlpatterns = [
 
     # PATH TO EDIT ACCOUNT :
     path('edit/', views.Edit, name='edit'),
+
 ]

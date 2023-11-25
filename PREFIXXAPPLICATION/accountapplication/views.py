@@ -9,6 +9,7 @@ from django.contrib.auth import logout
 from django.shortcuts import redirect
 import time
 from .models import Profile
+from django.contrib import messages
 
 from django.contrib.auth.models import PermissionsMixin
 
@@ -81,9 +82,6 @@ def AccountDelete(request):
         logout(request)
         # Redirect to success page
         return redirect('delete_account_done')
-        # 10 SECONDS SLEEP ; REDIRECT TO DASHBOARD :
-        time.sleep(10)
-        return redirect('')
     else:
         # Render the account deletion confirmation page
         return render(request, 'delete_account/delete_account.html')
@@ -102,4 +100,3 @@ def Edit(request):
         user_form = UserEditForm(instance=request.user)
         profile_form = ProfileEditForm(instance=request.user.profile)
         return render(request,'accountapplication/edit.html',{'user_form': user_form, 'profile_form': profile_form})
-
